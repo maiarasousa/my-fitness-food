@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Food</title>
+    <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Adicione seu próprio arquivo CSS personalizado, se necessário -->
+    <link rel="stylesheet" href="seu-estilo.css">
+    <style>
+        .col-md-6 p {
+            font-family: "Arial", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: bold;
+            font-style:normal;
+            color:aliceblue;
+            margin: 10px;
+            padding: 10px;
+            text-align: justify;
+        }
+        .contato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh; /* Isso define a altura mínima da seção */}
+            
+        .contato h2 {
+             margin-top: -50px; /* Ajuste a margem superior conforme necessário */
+             font-size: 32px; /* Ajuste o tamanho da fonte conforme necessário */}
+        
+        /* Estilo para o iframe do formulário */
+        .form-iframe {
+             height: auto; /* Permitir que o iframe ajuste sua altura automaticamente */
+             max-height: 70vh; /* Defina uma altura máxima para evitar que o formulário fique muito alto */}     
+        
+        .paragrafo-com-margem {
+             margin-bottom: 20px;}
+
+
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Fitness Food</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cardapio">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Suporte Nutricional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção de cabeçalho -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">My Fitness Food</h1>
+        <h5 class="display-4">Seu prato saudável na palma da sua mão.</h5>
+        <p class="lead">Experimente nossas marmitas fitness de alta qualidade, lembrando que você pode customizar o seu cardápio de acordo com sua necessidade!</p>
+        <a href="#cardapio" class="btn btn-light btn-lg">Ver Cardápio</a>
+    </header>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Sobre Nós</h2>
+                    <p>A My Fitness Food oferece uma solução completa para os desafios relacionados à alimentação saudável e fitness. Nós preparamos marmitas e refeições prontas com ingredientes
+                        frescos e saudáveis, cuidadosamente balanceadas por nutricionistas para atender às necessidades específicas de cada cliente. É muito fácil customizar seu cardápio! Basta agendar sua consulta com nosso Suporte Nutricional ou experimentar as delícias que temos a pronta entrega.
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/marmita-fitness.jpg" alt="Imagem Sobre Nós" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Cardápio" -->
+    <section id="cardapio" class="py-5">      
+        <div class="container">
+            <h2 class="text-center">Nosso Cardápio</h2>
+            <div class="row">
+                <!-- Exemplo de item do cardápio -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/frango grelhado.webp" alt="Item 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Marmita de Frango Grelhado</h5>
+                            <p class="card-text">Uma deliciosa marmita fitness com frango grelhado, legumes frescos e arroz integral.</p>
+                            <p class="card-text">Preço: R$ 29,90</p>
+                            <a href= "3" class="btn btn-primary">Pedir Agora</a>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/carne de panela.png" alt="Item 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Marmita de Carne de Panela</h5>
+                            <p class="card-text">Um prato saudável composto por carne de panela desfiada e legumes frescos.</p>
+                            <p class="card-text">Preço: R$ 35,00</p>
+                            <a href="frango.html" class="btn btn-primary">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/almondega.png" alt="Item 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Marmita de Almondega</h5>
+                            <p class="card-text">Deliciosa opção com almondega ao molho, arroz e brocólis.</p>
+                            <p class="card-text">Preço: R$ 31,90</p>
+                            <a href="#" class="btn btn-primary">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Adicione mais itens do cardápio aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="bg-primary text-white py-5 text-center contato">
+        <div class="container">
+            <h2>Inscreva-se para Receber Planos de Refeições Saudáveis e Dicas Fitness! </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Seu código do Google Forms aqui -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFwvTdGOpPTuxyqJkgUfi8dK1BGFXaq6qUc6ebrnzzKMwVgQ/viewform?usp=sf_link" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                </div>
+                <div class="col-md-6 paragrafo-com-margem">
+                    <p>Entre em contato conosco para fazer pedidos ou tirar dúvidas! Preencha o formulário abaixo e comece sua jornada para uma vida mais saudável e ativa.
+                        Transforme-se! 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        document.getElementById('meuForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Exibe a mensagem para o cliente
+            alert('Mensagem enviada com sucesso! Em breve retornaremos com sua solicitação. Obrigado(a) por entrar em contato.');
+
+            // Limpa os campos do formulário (opcional)
+            document.getElementById('nome').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('mensagem').value = '';
+        });
+    </script>
+</body>
+</html>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Marmitas Fitness</p>
+    </footer>
+
+    <!-- Adicione os links para os arquivos JavaScript do Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
